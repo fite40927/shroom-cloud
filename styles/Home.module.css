@@ -1,22 +1,38 @@
+/* 
+--linen: #f4e7e1ff;
+--antique-brass: #c0977fff;
+--chestnut: #824b35ff;
+--kobe: #932f19ff;
+--spanish-bistre: #767619ff; 
+*/
+/* DOCUMENT CSS */
 .container {
-  padding: 0 2rem;
+  max-height: 85vh;
 }
 
+.container a{
+  color:#767619ff;
+}
+
+/* BODY CSS */
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 75vh;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1rem 0;
+  /* width:80%; */
 }
 
+/* FOOTER CSS */
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  /* padding: 2rem 0; */
+  min-height: 10vh;
+  border-top: 1px solid #824b35ff;
   justify-content: center;
   align-items: center;
 }
@@ -28,33 +44,15 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  width: 50%;
+  justify-content: left;
+  text-align:left;
+}
+.title a{
+  color: #932f19ff;
 }
 
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
 
 .code {
   background: #fafafa;
@@ -70,8 +68,33 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 100vw;
 }
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  text-align:center;
+  width: 100%;
+  border-bottom:1px solid #824b35ff;
+  min-height: 15vh;
+}
+.nav{
+  display:inline-flex;
+  list-style-type: none;
+  justify-content: right;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.nav li{
+  padding:1rem;
+  min-width: 20%;
+}
+.nav li a {
+  color: #824b35ff;
+}
+
+
 
 .card {
   margin: 1rem;
@@ -79,28 +102,28 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #824b35ff;
+  color: #824b35ff;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 18vw;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #696a26ff;
+  border-color: #696a26ff;
+  cursor:pointer;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.icon{
+  max-width:100%;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.banner {
+  height:50vh;
+  overflow: hidden;
 }
 
 .logo {

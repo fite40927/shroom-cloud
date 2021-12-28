@@ -27,10 +27,12 @@ export default class Post extends React.Component {
     }
     render(){
         return (
-            <div>
-                <h2>{this.state.data.common}</h2>
-                <h4>{this.state.data.scientific}</h4>
-                <Image src={icon} className={styles.icon}/>
+            <div className={styles.post}>
+                <div className={styles.center}>
+                    <img className={styles.posticon} src={this.state.data.image}/>
+                    <h2>{this.state.data.common}</h2>
+                    <h4>{this.state.data.scientific}</h4>
+                </div>
                 <p>{this.state.data.description}</p>
             </div>
         )

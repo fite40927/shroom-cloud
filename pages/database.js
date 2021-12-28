@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css';
 import Card from '../components/Card';
 import Post from '../components/Post';
 import React from 'react';
+import Image from 'next/image';
 
 class Database extends React.Component{
     constructor(props){
@@ -9,6 +10,17 @@ class Database extends React.Component{
         this.state = {data:[],cards:[]};
     }
     componentDidMount(){
+        // fetch('https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/1024px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg')
+        // .then(response => response.blob())
+        // .then(blob => {
+        //     const reader = new FileReader();
+        //     console.log(reader.readAsDataURL(blob));
+        //     reader.onloadend = () => {
+        //         const base64data = reader.result;
+        //         console.log(base64data);
+        //       }
+        // })
+        // .catch(error => console.log(error));
         this.fetchData();
         setInterval( () => {
             this.fetchData();

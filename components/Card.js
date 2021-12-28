@@ -13,7 +13,9 @@ export default class Card extends React.Component {
         return (
             <Link href={this.state.href}>
                 <div className={styles.card}>
-                    <Image src={icon} className={styles.icon}/>
+                    <div className={styles.cardimg} >
+                        <img src={this.state.data.image}/>
+                    </div>
                     <b>{this.state.data.common}</b>
                 </div>
             </Link>

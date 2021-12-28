@@ -6,7 +6,7 @@ export default function Home() {
   return (
       <>
         <div className={styles.banner}>
-          <Image src={banner} layout='intrinsic' width={1200} height={800}/>
+          <Image src={banner} />
         </div>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in diam elit. Donec congue dolor feugiat, volutpat nibh quis, facilisis ante. Duis hendrerit ut velit vel vestibulum. Cras maximus purus at lorem fringilla efficitur. Mauris maximus, dui in imperdiet tristique, justo risus fermentum risus, a consequat ex sem ac sapien. Vivamus pharetra tincidunt accumsan. Sed sed ipsum in ex volutpat hendrerit. Nam porta tortor sed odio faucibus dictum. Aliquam eu velit est. Sed mollis fringilla velit porttitor dapibus.</p>
 
